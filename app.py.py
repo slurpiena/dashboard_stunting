@@ -9,7 +9,7 @@ import joblib
 # KONFIGURASI HALAMAN & PATH DATASET
 # ==========================================
 st.set_page_config(
-    page_title="Dashboard Stunting Balita",
+    page_title="Prototipe Smart Child Health System Berbasis Machine Learning",
     page_icon="👶",
     layout="wide"
 )
@@ -81,7 +81,7 @@ st.markdown("""
         gap: .5rem; background: #edf3f6; padding: .4rem; border-radius: 14px;
     }
     [data-testid="stTabs"] button[role="tab"] {
-        border-radius: 10px; padding: .65rem 1rem; font-weight: 700; color: #52647a;
+        border-radius: 10px; padding: .65rem 1rem; font-weight: 750; color: #52647a;
     }
     [data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
         background: #ffffff; color: var(--brand-dark); box-shadow: 0 2px 8px rgba(25,48,77,.08);
@@ -186,7 +186,7 @@ def confidence_for(model, proba, pred):
 st.markdown("""
 <div class="hero">
     <div class="hero-kicker">Dashboard Kesehatan • Analisis Antropometri</div>
-    <div class="main-title">Pemantauan Pertumbuhan Balita</div>
+    <div class="main-title">Prototipe Smart Child Health System Berbasis Machine Learning</div>
     <div class="sub-title">Eksplorasi data dan prediksi awal status tinggi badan menurut umur menggunakan Decision Tree dan Gaussian Naïve Bayes.</div>
 </div>
 """, unsafe_allow_html=True)
